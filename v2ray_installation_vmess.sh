@@ -9,7 +9,7 @@ if [ -z "$1" ];then echo "域名不能为空";exit;fi
 if [ `id -u` -ne 0 ];then echo "需要root用户";exit;fi
 
 
-# 配置系统时区为东八区
+# 配置系统时区为东八区1
 rm -f /etc/localtime
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
